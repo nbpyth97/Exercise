@@ -9,21 +9,22 @@
 # For nums[4]=3 there exist three smaller numbers than it (1, 2 and 2).
 # =============================================================================
 
+nums = [8,1,2,2,3]
+count = []
+output = []
+a = 0
 
-def problem(array):
-    a = 0
-    b = 0
-    i = 0
-    Sum = int()
-    output = []
-    for i in range(int(len(array))-1):
-        if array[0] != array[b]:
-            if array[0] > array[b]:
-               Sum = Sum + 1
-        b = b + 1
-    output.append(Sum)
-    print(output)
-problem([8,1,2,2,3])
+for i in range(len(nums)):
+    for x in nums:
+        if nums[a] > x:
+            count.append(1)
+    output.append(len(count))
+    count.clear()
+
+    a += 1
+
+print(output)
+
     
 
 
