@@ -22,5 +22,5 @@ def numIdenticalPairs():
     List = [1,2,3,1,1,3]
     array = []
     for a in range(List):
-        
+#still need to finish.        
         
